@@ -1,0 +1,13 @@
+.product {
+    clear: both;
+}
+
+.product > .pic{
+    width: 300px;
+    // float: left;
+
+}
+.product > .name{
+    font-size: 1.5em;
+    font-style: italic;
+}
