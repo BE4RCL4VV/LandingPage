@@ -10,9 +10,12 @@ import { AboutComponent } from './about/about.component';
 import { Srt905Component } from './srt905/srt905.component';
 import { Ec401Component } from './ec401/ec401.component';
 import { Rga72Component } from './rga72/rga72.component';
+import { LandingComponent } from './landing/landing.component';
+import { ProductService } from './product.service';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
-  declarations: [							
+  declarations: [									
     AppComponent,
       NavbarComponent,
       ProductComponent,
@@ -20,13 +23,15 @@ import { Rga72Component } from './rga72/rga72.component';
       AboutComponent,
       Srt905Component,
       Ec401Component,
-      Rga72Component
+      Rga72Component,
+      LandingComponent,
+      ProductDetailComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

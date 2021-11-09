@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,13 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
+  @Input() data = {
+    name: "",
+    image: "",
+    brand: "",
+    path: ""
+    }
+
   productName = "";
 
   currentID: number = -1;

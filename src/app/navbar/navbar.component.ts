@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   urls: any[] = [
     { route: 'home', name: 'Home' },
+    { route: '/product', name: 'Products' },
     { route: '/srt905', name: 'SRT-905' },
     { route: '/ec401', name: 'EC-401' },
-    { route: '/rga72', name: 'RGA-72' },
-    { route: '/product', name: 'Products' }
+    { route: '/rga72', name: 'RGA-72' }
+    
   ]
 
   constructor() { }
